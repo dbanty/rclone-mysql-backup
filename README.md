@@ -1,3 +1,5 @@
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/7GOA4r?referralCode=xsbY2R)
+
 # Backup MySQL to Cloudflare R2
 
 This Docker app runs a single time, dumping a MySQL database with [mydumper] and using [rclone] to push that data to [Cloudflare R2](https://developers.cloudflare.com/r2/).
