@@ -45,9 +45,15 @@ Then, in settings, set restart to never and input a cron schedule to backup as o
 3. Run `rclone copy remote:$R2_BUCKET/$R2_PATH ./$LOCAL_FOLDER_TO_CREATE`
 4. Run `myloader -h $MYSQL_HOST -u $MYSQL_USER -p $MYSQL_PASSWORD -d $LOCAL_FOLDER_TO_CREATE`
 
-## Using something other than Cloudflare R2
+## FAQ
+
+### Using something other than Cloudflare R2
 
 You can fork this repo and modify the [rclone config file] to work for any storage destination [that rclone supports](https://rclone.org/#providers) (which is pretty much everything).
+
+### Does this work with MariaDB?
+
+Yes! `mydumper` and `myloader` are compatible with MariaDB as well.
 
 [mydumper]: https://github.com/mydumper/mydumper
 [rclone]: https://rclone.org
