@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM rclone/rclone:1.70.3 as rclone
+FROM rclone/rclone:1.71.0 as rclone
 
 FROM mydumper/mydumper:v0.19.4-2
 
